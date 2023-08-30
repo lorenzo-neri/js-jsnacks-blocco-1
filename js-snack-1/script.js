@@ -41,3 +41,37 @@ if(firstWord.length > secondWord.length){
     console.log(secondWord);
     longerWordEl.append(`La parola più lunga da te scritta è: ${secondWord}`);
 }
+
+/* 
+
+### BONUS assegnato a lezione ###
+
+Da fare con WHILE tutti I prossimi snacks
+Snack 1
+L’utente inserisce due numeri in successione, con due prompt.
+Il software stampa il maggiore.
+
+*/
+
+let i = 0;
+
+let listNumbers = [];
+while (i < 2){
+
+    const userNumber = Number(prompt('Scegli un numero'));
+    listNumbers.push(userNumber)
+    console.log(listNumbers);
+    const numeroConfronto = listNumbers[i - 1];
+    
+    if(isNaN(userNumber)) {
+        i--;
+        
+    } else if (listNumbers[i] > numeroConfronto) {
+        console.log(userNumber);
+    } else if (listNumbers[i] < numeroConfronto) {
+        console.log(numeroConfronto);
+    }
+
+    i++;    
+}
+
