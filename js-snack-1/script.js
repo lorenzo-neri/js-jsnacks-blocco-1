@@ -65,7 +65,7 @@ while (i < 2){
     
     if(isNaN(userNumber)) {
         i--;
-        
+
     } else if (listNumbers[i] > numeroConfronto) {
         console.log(userNumber);
     } else if (listNumbers[i] < numeroConfronto) {
@@ -74,4 +74,5 @@ while (i < 2){
 
     i++;    
 }
+
 
